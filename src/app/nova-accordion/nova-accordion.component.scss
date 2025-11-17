@@ -1,0 +1,23 @@
+.nova-expanded-image {
+   display: block;
+    margin: 16px auto;
+  width: 100%;
+  max-width: 420px;
+  // border-radius: 12px;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nova-note-card {
+  display: inline-block;   /* shrink to content */
+  padding: 8px 16px;       /* inner spacing */
+  text-align: center;      /* center the text inside */
+  box-sizing: border-box;  /* ensure padding is included in size */
+}
+
+/* Optional: container to center card */
+.nova-note-card-container {
+  text-align: center;      /* center inline-block child */
+  margin-top: 16px;        /* optional spacing */
+}
+

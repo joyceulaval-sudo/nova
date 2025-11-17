@@ -1,0 +1,23 @@
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  .faq-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  mat-expansion-panel {
+    margin-bottom: 1rem;
+  }
+
+  mat-expansion-panel-header mat-panel-title {
+    display: flex;
+    align-items: center;
+  }
+
+  mat-expansion-panel-header mat-icon {
+    margin-right: 0.5rem;
+  }
+}

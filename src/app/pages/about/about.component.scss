@@ -1,0 +1,23 @@
+.solution-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  .section-card {
+    margin-bottom: 2rem;
+  }
+
+  mat-card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+    padding-left: 0;
+  }
+
+  mat-expansion-panel-header {
+    font-weight: 600;
+  }
+}

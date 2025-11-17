@@ -1,0 +1,15 @@
+<section class="faq-section">
+  <h2 class="faq-title mat-h2">Healthy Eating FAQ</h2>
+
+  <mat-accordion multi>
+    <mat-expansion-panel *ngFor="let faq of faqData">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon>help_outline</mat-icon>
+          {{ faq.question }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ faq.answer }}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>

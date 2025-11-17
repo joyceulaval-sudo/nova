@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://joyceulaval-sudo.github.io/nova',
+  basePath: '/nova',
   supportedLocales: {
   "en-US": ""
 },

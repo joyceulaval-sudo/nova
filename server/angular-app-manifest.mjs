@@ -2,7 +2,7 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: 'https://joyceulaval-sudo.github.io/nova/',
+  baseHref: '/nova/',
   locale: undefined,
   routes: [
   {
@@ -30,11 +30,11 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 23600, hash: '5a6d540bc935a2b8d959e7520b908d8a60b7b59beb9cc047ffa14b84cca4439b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 17174, hash: '928edc8fe23cd7555a14df7743d6c3d2f1f804607dcec048fc5ce0d3d253d3eb', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'nova/index.html': {size: 80232, hash: 'bc4760195777d07b053a35deec5e523986d5967e448309058b49a42d58586294', text: () => import('./assets-chunks/nova_index_html.mjs').then(m => m.default)},
-    'faq/index.html': {size: 72836, hash: '72b8d2a0d927e89fabf22ba200f7ae7a2bd37272fc0dac583666d0fd2e307a12', text: () => import('./assets-chunks/faq_index_html.mjs').then(m => m.default)},
-    'about/index.html': {size: 75710, hash: 'd0b2657e985a5c21503762d9cfc9d1484e01bce648106a21a521277e66584468', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 23566, hash: '2500a770cd7866801004b2f2cde442f76a6a98551c6b2dc55eb9223b439783f2', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 17140, hash: '25a4ad580e906685caa07e48b12516c6bc10ae2f154e06afb4c33af52c12d1e9', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'nova/index.html': {size: 80198, hash: '76d00516594a380565d0c2b7c05a0c0a2dbda773419c41693dcf1f15864db0ba', text: () => import('./assets-chunks/nova_index_html.mjs').then(m => m.default)},
+    'faq/index.html': {size: 72802, hash: 'c5fcfa1d60fc4645a95c14217651c272f73a1f8bd3d8bdedaf9baa8cf9998099', text: () => import('./assets-chunks/faq_index_html.mjs').then(m => m.default)},
+    'about/index.html': {size: 75676, hash: 'dd0adc08269f9028a7723a34e75f362c6ae17d74c4c5073932825933aae86634', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
     'styles-36AW6TKX.css': {size: 6979, hash: 'vY6tjD/ce7M', text: () => import('./assets-chunks/styles-36AW6TKX_css.mjs').then(m => m.default)}
   },
 };

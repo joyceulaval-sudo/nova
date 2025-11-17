@@ -57,10 +57,8 @@ imageDescriptionAlt = "Fruits and vegetables"
       description: 'Oils, salt, sugar',
       imageGroup: '/assets/nova-group-2.svg',
       imageGroupAlt: 'NOVA Group 2',
-      paragraph: `Oils, fats, salt, and sugar used to prepare or season foods. These are
-        not substitutes for real foods and should be used in moderation.`,
-    note: `These foods form the foundation of a nutritious, balanced, and
-      naturally flavorful diet.`,
+    paragraph: `Oils, fats, salt, and sugar used to prepare or season foods.`,
+    note: `These are not substitutes for real foods and should be used in moderation.`,
     imageDescription: '/assets/g2.png',
     imageDescriptionAlt: 'Oils and salt'
     },
@@ -70,10 +68,9 @@ imageDescriptionAlt = "Fruits and vegetables"
       imageGroup: '/assets/nova-group-3.svg',
       imageGroupAlt: 'NOVA Group 3',
       paragraph: `Industrialized foods made from unprocessed foods with added salt, sugar,
-        or oil. Recognizable as versions of original foods and can be used in
+        or oil. `,
+      note: `Recognizable as versions of original foods and can be used in
         moderation.`,
-    note: `These foods form the foundation of a nutritious, balanced, and
-      naturally flavorful diet.`,
     imageDescription: '/assets/g3.png',
     imageDescriptionAlt: 'Bread and cheese'
     },
@@ -83,10 +80,9 @@ imageDescriptionAlt = "Fruits and vegetables"
       imageGroup: '/assets/nova-group-4.svg',
       imageGroupAlt: 'NOVA Group 4',
       paragraph: `Industrial products made mostly from substances synthesized in
-        laboratories (colorings, flavorings, additives). They are designed to be
+        laboratories (colorings, flavorings, additives). `,
+      note: `They are designed to be
         convenient and attractive but replace real foods and should be avoided.`,
-    note: `These foods form the foundation of a nutritious, balanced, and
-      naturally flavorful diet.`,
     imageDescription: '/assets/g4.png',
     imageDescriptionAlt: 'Chips and soda'
     }

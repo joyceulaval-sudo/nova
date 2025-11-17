@@ -4,26 +4,27 @@
     <mat-expansion-panel *ngFor="let faq of faqData">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          <mat-icon>help_outline</mat-icon>
+          <mat-icon>help</mat-icon>
           {{ faq.question }}
         </mat-panel-title>
       </mat-expansion-panel-header>
       <div [innerHTML]="faq.answer"></div>
     </mat-expansion-panel>
   </mat-accordion>
-  <section class="faq">
+
+
     <h2 class="faq-title mat-h2">Food Processing Level Predictor FAQ</h2>
     <mat-accordion multi>
       <mat-expansion-panel *ngFor="let faq of predictorFaqs">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <mat-icon>help_outline</mat-icon>
+            <mat-icon>help</mat-icon>
             {{ faq.question }}
           </mat-panel-title>
         </mat-expansion-panel-header>
         <p [innerHTML]="faq.answer"></p>
       </mat-expansion-panel>
     </mat-accordion>
-  </section>
+
 </section>
 <app-footer [footerText]="footerText"></app-footer>

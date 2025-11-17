@@ -16,6 +16,5 @@ export class AppComponent {
 
   onClick(page: string) {
     this.router.navigate([page])
-    console.log('Clicked link:', page)
   }
 }

@@ -1,0 +1,35 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Toolbar links visible on large screens only */
+.toolbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .toolbar-links {
+    display: none; /* hide links on small screens */
+  }
+  .hamburger {
+    display: inline-flex; /* show hamburger */
+  }
+
+  .mobile-sidenav {
+    width: 250px;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .mobile-sidenav {
+    display: none;
+  }
+}

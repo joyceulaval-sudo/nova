@@ -1,17 +1,17 @@
 .solution-page {
   display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
+  gap: 30px;
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 40px auto;
-    font-family: 'Roboto', sans-serif;
-  }
+  font-family: 'Roboto', sans-serif;
+}
 
 .section-card {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
 .section-card:hover {
   transform: translateY(-3px);
@@ -22,49 +22,49 @@
   font-size: 1.6rem;
   font-weight: 600;
   color: #1976d2;
-  }
-  
-  .section-card mat-card-content {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .icon-list {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
-  }
-  
-  .icon-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-    .icon-list li mat-icon {
-      color: #4caf50;
-      margin-right: 12px;
-      font-size: 20px;
-    }
-  
-    .badge-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-  
-    .badge-list span {
-      background: #e3f2fd;
-      color: #0d47a1;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-weight: 500;
-      font-size: 0.95rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+}
 
+.section-card mat-card-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-list li mat-icon {
+  color: #4caf50;
+  margin-right: 12px;
+  font-size: 20px;
+  overflow:visible
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.badge-list span {
+  background: #e3f2fd;
+  color: #0d47a1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 ul ul {
   padding-left: 20px;

@@ -53,15 +53,13 @@
       *ngFor="let step of novaSteps; let i = index"
       class="nova-step-card"
     >
-      <div class="step-number">{{ i + 1 }}</div>
-
+     <span class="step-badge">{{i+1}}</span>
       <img
         mat-card-image
         [src]="step.img"
         [alt]="step.title"
-        class="image-step"
+        class="image-step image-container"
       />
-
       <mat-card-content>
         <h3 class="step-title">{{ step.title }}</h3>
         <p class="step-description">{{ step.description }}</p>

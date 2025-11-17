@@ -3,15 +3,23 @@
   text-align: center;
   padding: 120px 20px 60px;
   color: #fff;
-  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80')
+    center/cover no-repeat;
 }
 
 .nova-hero::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(255,255,255,0) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   z-index: 0;
 }
 
@@ -26,7 +34,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 16px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .nova-hero-subtitle {
@@ -44,25 +52,24 @@
   line-height: 1.7;
 }
 
-
 mat-expansion-panel-header {
-  min-height: unset !important;  
-  height: auto !important;    
-  align-items: flex-start;        
-  padding: 10px 16px;          
+  min-height: unset !important;
+  height: auto !important;
+  align-items: flex-start;
+  padding: 10px 16px;
 }
 
 mat-panel-title {
   display: flex;
-  align-items: center;           
-  gap: 10px;                     
+  align-items: center;
+  gap: 10px;
 }
 
-mat-panel-description{
-  height: auto !important;   
-  align-items: flex-start;      
+mat-panel-description {
+  height: auto !important;
+  align-items: flex-start;
   padding-top: 5px;
-  padding-left: 50px;           
+  padding-left: 50px;
 }
 
 .nova-intro {
@@ -126,17 +133,11 @@ mat-panel-description{
 
 @media (min-width: 768px) {
   .nova-accordion-container {
-    margin: 32px auto; 
-    max-width: 1300px; 
+    margin: 32px auto;
+    max-width: 1300px;
     padding: 0;
-margin-top: 3.2rem;
+    margin-top: 3.2rem;
   }
-}
-
-.image-step{
-  max-width: auto;
-  margin-top: 10px;
-  height: 150px;
 }
 
 .steps-grid {
@@ -147,7 +148,8 @@ margin-top: 3.2rem;
 .nova-step-card {
   position: relative;
   padding-top: 2rem;
-  }
+  // margin: 0.5rem
+}
 
 .step-number {
   position: absolute;
@@ -155,7 +157,7 @@ margin-top: 3.2rem;
   left: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1976d2; 
+  color: #1976d2;
 }
 .nova-container {
   max-width: 1000px;
@@ -166,14 +168,14 @@ margin-top: 3.2rem;
   justify-content: center;
   align-items: center;
 }
-    
+
 .nova-container .nova-title {
-  font-size: 2rem;      
-  font-weight: 700;    
-  color: #2c3e50;      
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
   margin: 2.5rem;
-    margin-top: 6rem;
-    text-align: center;
+  margin-top: 6rem;
+  text-align: center;
 }
 
 /* Footer styling */
@@ -199,4 +201,31 @@ margin-top: 3.2rem;
 
 .nova-footer-content a:hover {
   text-decoration: underline;
+}
+.step-container {
+  position: relative;
+  border-radius: 8px;
+}
+.step-badge {
+    z-index: 10;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background-color: #1976d2;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border: 1px solid #fff; 
+  box-sizing: border-box;
+}
+.image-step {
+  max-width: auto;
+  height: 150px;
+  top: -36px;
 }

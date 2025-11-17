@@ -40,7 +40,7 @@
 .nova-hero-subtitle {
   font-size: 1.5rem;
   font-weight: 400;
-  opacity: 0.9;
+  text-shadow: 4px 2px 8px  rgba(0, 0, 0, 0.6);
 }
 
 .nova-intro {
@@ -227,5 +227,5 @@ mat-panel-description {
 .image-step {
   max-width: auto;
   height: 150px;
-  top: -36px;
+  margin-top: -36px;
 }

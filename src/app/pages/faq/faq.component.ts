@@ -20,9 +20,16 @@ import { FooterComponent } from '../footer/footer.component'
 export class FaqComponent {
   faqData: { question: string; answer: SafeHtml }[] = [];
   predictorFaqs: { question: string; answer: SafeHtml }[] = [];
-  footerText = `The content on this page was generated with the assistance of 
-    <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>.`
-
+  footerText = `  <p style="margin: 0;">
+    Content generated with the assistance of 
+    <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>,
+  </p>
+  <p style="margin: 0;">
+    based on: 
+    <a href="https://doi.org/10.1017/S1368980018003762" target="_blank" rel="noopener noreferrer">
+      Monteiro CA, et al. Ultra-processed foods: what they are and how to identify them. Public Health Nutrition, 2019
+    </a>.
+  </p>`
   constructor(private sanitizer: DomSanitizer) {
     this.faqData = [
       {
@@ -60,6 +67,34 @@ export class FaqComponent {
       {
         question: 'What beverages are recommended?',
         answer: 'Water is preferred. Natural beverages like unsweetened fruit or vegetable juices in moderation are fine. Avoid sugary drinks, soft drinks, and energy drinks.'
+      },
+      {
+        "question": "What are ultra-processed foods?",
+        "answer": "Ultra-processed foods are industrially formulated products made mostly from substances extracted from foods, derived from food constituents, or synthesized in laboratories. They often contain additives like flavorings, colorings, emulsifiers, and preservatives."
+      },
+      {
+        "question": "How do ultra-processed foods differ from processed foods?",
+        "answer": "Processed foods have undergone methods like canning, freezing, or baking but still contain recognizable whole foods. Ultra-processed foods, on the other hand, are heavily altered and usually bear little resemblance to the original ingredients."
+      },
+      {
+        "question": "Why should I limit ultra-processed foods?",
+        "answer": "High consumption of ultra-processed foods is linked to health issues such as obesity, diabetes, heart disease, and certain cancers due to high levels of sugar, salt, unhealthy fats, and low nutritional value."
+      },
+      {
+        "question": "How can I identify ultra-processed foods?",
+        "answer": "Look for products with long ingredient lists containing additives, preservatives, colorings, flavorings, sweeteners, or ingredients you wouldn’t normally use at home. Packaged snacks, sugary cereals, instant noodles, and soda are common examples."
+      },
+      {
+        "question": "Are all packaged foods ultra-processed?",
+        "answer": "Not necessarily. Some packaged foods, like frozen vegetables or minimally processed cheese, may have undergone only light processing and retain most of their natural nutritional value."
+      },
+      {
+        "question": "Is it safe to eat ultra-processed foods occasionally?",
+        "answer": "Yes, occasional consumption is generally safe, but they should not make up a large part of your diet. Emphasizing whole, minimally processed foods is better for long-term health."
+      },
+      {
+        "question": "Can ultra-processed foods be part of a balanced diet?",
+        "answer": "In moderation, they can fit into a balanced diet, but the focus should be on fruits, vegetables, whole grains, lean proteins, and minimally processed foods."
       },
       {
         question: 'What is the difference between NOVA and Nutri-Score?',

@@ -32,8 +32,7 @@ export class NovaComponent {
       unprocessed or only minimally processed — meaning they may be
       cleaned, peeled, cut, dried, chilled, frozen, pasteurized, or
       otherwise prepared without adding substances like salt, sugar, oils,
-      or additives. These foods form the foundation of a nutritious,
-      balanced, and naturally flavorful diet.`,
+      or additives.`,
     note: `These foods form the foundation of a nutritious, balanced, and
       naturally flavorful diet.`,
     imageGroupAlt: 'NOVA Group 1',

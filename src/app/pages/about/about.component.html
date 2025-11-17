@@ -1,5 +1,4 @@
 <section class="solution-page">
-
   <!-- Presentation -->
   <mat-card class="section-card">
     <mat-card-header>
@@ -7,15 +6,29 @@
     </mat-card-header>
     <mat-card-content>
       <p>
-        We propose a <strong>machine-learning–powered service</strong> that predicts the degree of food processing (1–4), even with incomplete information, as seen in Open Food Facts.
+        We propose a <strong>machine-learning–powered service</strong> that
+        predicts the degree of food processing (1–4), even with incomplete
+        information, as seen in Open Food Facts.
       </p>
 
       <h4>Key Features:</h4>
       <ul class="icon-list">
-        <li><mat-icon>check_circle</mat-icon>Automatically predict an item’s degree of processing (1–4)</li>
-        <li><mat-icon>check_circle</mat-icon>Work before full data collection is completed</li>
-        <li><mat-icon>check_circle</mat-icon>Help users, educators, and researchers evaluate food processing instantly</li>
-        <li><mat-icon>check_circle</mat-icon>Integrate with the Open Food Facts databases</li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Automatically predict an item’s
+          degree of processing (1–4)
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Work before full data collection is
+          completed
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Help users, educators, and
+          researchers evaluate food processing instantly
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Integrate with the Open Food Facts
+          databases
+        </li>
       </ul>
 
       <h4>Our solution can be used as:</h4>
@@ -24,7 +37,10 @@
         <span>Embedded Component</span>
       </div>
 
-      <p>We also plan a user-friendly website to share results and explain predictions.</p>
+      <p>
+        We also plan a user-friendly website to share results and explain
+        predictions.
+      </p>
     </mat-card-content>
   </mat-card>
 
@@ -37,20 +53,34 @@
       <h4>Components:</h4>
       <ul class="icon-list">
         <li><mat-icon>memory</mat-icon>Machine Learning Model</li>
-        <li><mat-icon>speed</mat-icon>Gradient Boosting (XGBoost / LightGBM / CatBoost)</li>
+        <li>
+          <mat-icon>speed</mat-icon>Gradient Boosting (XGBoost / LightGBM /
+          CatBoost)
+        </li>
       </ul>
 
       <h4>Why This Approach?</h4>
       <ul class="icon-list">
-        <li><mat-icon>check_circle</mat-icon>Native handling of missing values</li>
-        <li><mat-icon>check_circle</mat-icon>Excellent performance on heterogeneous structured data</li>
-        <li><mat-icon>check_circle</mat-icon>High accuracy without extensive preprocessing</li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Native handling of missing values
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Excellent performance on
+          heterogeneous structured data
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>High accuracy without extensive
+          preprocessing
+        </li>
       </ul>
 
       <h4>Key Data Features:</h4>
       <ul>
         <li>ingredients_text, ingredients_tags, additives_n, additives_tags</li>
-        <li>categories, pnns_groups_1, pnns_groups_2, food_groups, food_groups_tags</li>
+        <li>
+          categories, pnns_groups_1, pnns_groups_2, food_groups,
+          food_groups_tags
+        </li>
         <li>main_category, product_name, packaging</li>
         <li>brands, labels, allergens, traces</li>
       </ul>
@@ -64,18 +94,31 @@
     </mat-card-header>
     <mat-card-content>
       <ul class="icon-list">
-        <li><mat-icon>track_changes</mat-icon>Predict NOVA scores accurately</li>
-        <li><mat-icon>speed</mat-icon>Provide instant feedback to users and educators</li>
-        <li><mat-icon>school</mat-icon>Promote learning about food processing</li>
-        <li><mat-icon>insights</mat-icon>Support researchers with preliminary NOVA estimates</li>
-        <li><mat-icon>groups</mat-icon>Engage the community in digital nutrition education</li>
+        <li>
+          <mat-icon>track_changes</mat-icon>Predict NOVA scores accurately
+        </li>
+        <li>
+          <mat-icon>speed</mat-icon>Provide instant feedback to users and
+          educators
+        </li>
+        <li>
+          <mat-icon>school</mat-icon>Promote learning about food processing
+        </li>
+        <li>
+          <mat-icon>insights</mat-icon>Support researchers with preliminary NOVA
+          estimates
+        </li>
+        <li>
+          <mat-icon>groups</mat-icon>Engage the community in digital nutrition
+          education
+        </li>
       </ul>
     </mat-card-content>
   </mat-card>
 
   <!-- Milestones -->
   <mat-card class="section-card">
-    <mat-card-header style="margin-bottom: 2rem;">
+    <mat-card-header style="margin-bottom: 2rem">
       <mat-card-title>Milestones</mat-card-title>
     </mat-card-header>
     <mat-card-content>
@@ -85,7 +128,9 @@
             <mat-panel-title>{{ phase.title }}</mat-panel-title>
           </mat-expansion-panel-header>
           <ul class="icon-list">
-            <li *ngFor="let task of phase.tasks"><mat-icon>check_circle</mat-icon>{{ task }}</li>
+            <li *ngFor="let task of phase.tasks">
+              <mat-icon>check_circle</mat-icon>{{ task }}
+            </li>
           </ul>
         </mat-expansion-panel>
       </mat-accordion>
@@ -99,10 +144,16 @@
     </mat-card-header>
     <mat-card-content>
       <ul class="icon-list">
-        <li><mat-icon>group</mat-icon>4 students for data preprocessing and ML model development</li>
+        <li>
+          <mat-icon>group</mat-icon>4 students for data preprocessing and ML
+          model development
+        </li>
         <li><mat-icon>computer</mat-icon>CPU/GPU resources (optional)</li>
         <li><mat-icon>dataset</mat-icon>Open Food Facts dataset</li>
-        <li><mat-icon>code</mat-icon>Technologies: Python, Scikit-learn, XGBoost, LightGBM, frontend (HTML/React/Bootstrap)</li>
+        <li>
+          <mat-icon>code</mat-icon>Technologies: Python, Scikit-learn, XGBoost,
+          LightGBM, frontend (HTML/React/Bootstrap)
+        </li>
       </ul>
     </mat-card-content>
   </mat-card>
@@ -114,9 +165,17 @@
     </mat-card-header>
     <mat-card-content>
       <ul class="icon-list">
-        <li><mat-icon>warning</mat-icon>Incomplete or inconsistent Open Food Facts data</li>
-        <li><mat-icon>warning</mat-icon>High variability in ingredient descriptions</li>
-        <li><mat-icon>warning</mat-icon>Generalization issues for rare items</li>
+        <li>
+          <mat-icon>warning</mat-icon>Incomplete or inconsistent Open Food Facts
+          data
+        </li>
+        <li>
+          <mat-icon>warning</mat-icon>High variability in ingredient
+          descriptions
+        </li>
+        <li>
+          <mat-icon>warning</mat-icon>Generalization issues for rare items
+        </li>
         <li><mat-icon>warning</mat-icon>Multilingual support needed</li>
       </ul>
     </mat-card-content>
@@ -130,10 +189,17 @@
     <mat-card-content>
       <ul class="icon-list">
         <li><mat-icon>school</mat-icon>Practical ML example for students</li>
-        <li><mat-icon>lightbulb</mat-icon>Interactive learning about ultra-processed foods</li>
-        <li><mat-icon>insights</mat-icon>Teaches ML concepts using real datasets</li>
+        <li>
+          <mat-icon>lightbulb</mat-icon>Interactive learning about
+          ultra-processed foods
+        </li>
+        <li>
+          <mat-icon>insights</mat-icon>Teaches ML concepts using real datasets
+        </li>
         <li><mat-icon>public</mat-icon>Supports public health platforms</li>
-        <li><mat-icon>check_circle</mat-icon>Empowers informed, healthier choices</li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Empowers informed, healthier choices
+        </li>
       </ul>
     </mat-card-content>
   </mat-card>
@@ -146,14 +212,25 @@
     <mat-card-content>
       <ul class="icon-list">
         <li><mat-icon>speed</mat-icon>Prediction accuracy on validation set</li>
-        <li><mat-icon>check_circle</mat-icon>Valid predictions per NOVA class</li>
-        <li><mat-icon>check_circle</mat-icon>Robustness with missing attributes</li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Valid predictions per NOVA class
+        </li>
+        <li>
+          <mat-icon>check_circle</mat-icon>Robustness with missing attributes
+        </li>
         <li><mat-icon>speed</mat-icon>Prediction speed</li>
-        <li><mat-icon>groups</mat-icon>Increased user engagement and understanding</li>
-        <li><mat-icon>thumb_up</mat-icon>Positive feedback from educators and learners</li>
-        <li><mat-icon>integration_instructions</mat-icon>Integration in external apps and community adoption</li>
+        <li>
+          <mat-icon>groups</mat-icon>Increased user engagement and understanding
+        </li>
+        <li>
+          <mat-icon>thumb_up</mat-icon>Positive feedback from educators and
+          learners
+        </li>
+        <li>
+          <mat-icon>integration_instructions</mat-icon>Integration in external
+          apps and community adoption
+        </li>
       </ul>
     </mat-card-content>
   </mat-card>
-
 </section>

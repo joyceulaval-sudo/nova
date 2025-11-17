@@ -1,22 +1,19 @@
-
-  <div class="nova-content-box">
-    <div class="nova-content">
-      <p>
-        {{ data.paragraph }}
-      </p>
-
-    </div>
-<div class="nova-note-card-container">
-  <mat-card color="primary"  class=" mat-elevation-z4 nova-note-card no-shadow">
-    <mat-card-content>
-            <img
-        class="nova-expanded-image"
-        [src]="data.imageDescription"
-        [alt]="data.imageDescriptionAlt"
-      />
-      <span>{{ data.note }}</span>
-    </mat-card-content>
-  </mat-card>
-</div>
-
+<div class="nova-content-box">
+  <div class="nova-content">
+    <p>
+      {{ data.paragraph }}
+    </p>
   </div>
+  <div class="nova-note-card-container">
+    <mat-card color="primary" class="mat-elevation-z4 nova-note-card no-shadow">
+      <mat-card-content>
+        <img
+          class="nova-expanded-image"
+          [src]="data.imageDescription"
+          [alt]="data.imageDescriptionAlt"
+        />
+        <span>{{ data.note }}</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

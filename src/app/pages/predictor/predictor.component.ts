@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatIconModule } from '@angular/material/icon';
+import { Component } from '@angular/core'
+import { MatCardModule } from '@angular/material/card'
+import { MatExpansionModule } from '@angular/material/expansion'
+import { MatIconModule } from '@angular/material/icon'
 import { CommonModule } from '@angular/common'
-
 
 @Component({
   selector: 'app-predictor',
@@ -17,7 +16,7 @@ import { CommonModule } from '@angular/common'
   styleUrl: './predictor.component.scss'
 })
 export class PredictorComponent {
- milestones = [
+  milestones = [
     {
       title: 'Phase 1 — Data Collection & Cleaning (Week 1–2)',
       tasks: [

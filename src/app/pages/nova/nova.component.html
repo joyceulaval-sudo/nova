@@ -1,62 +1,71 @@
 <!-- Hero Section -->
 <section class="nova-hero">
+  <div class="nova-hero-overlay"></div>
   <div class="nova-hero-content">
     <h1 class="nova-hero-title">NOVA Classification System</h1>
     <p class="nova-hero-subtitle">
-      From Unprocessed to Ultra-Processed: Understand What You Eat
+      From Unprocessed to Ultra-Processed — Understand What You Eat
     </p>
   </div>
 </section>
 
 <!-- Intro Paragraph -->
-<section class="nova-intro">
-  <p>
+<section class="nova-intro container">
+  <p class="nova-intro-text">
     The NOVA food classification system categorizes foods into four groups based
     on the extent and purpose of food processing. Understanding these groups
-    helps guide healthier food choices and supports mindful eating habits.
+    helps guide healthier food choices and supports mindful eating.
   </p>
 </section>
-<div class="nova-accordion-container">
-<mat-accordion multi>
-  <mat-expansion-panel *ngFor="let item of novaAccordionData">
-    <mat-expansion-panel-header>
-      <div class="nova-header">
-        <img
-          [src]="item.imageGroup"
-          [alt]="item.imageGroupAlt"
-          class="nova-header-image"
-        />
-        <div class="nova-header-text">
-          <span class="nova-title">{{ item.title }}</span>
-          <span class="nova-subtitle">{{ item.description }}</span>
+
+<!-- Accordion Section -->
+<section class="nova-accordion-container">
+  <mat-accordion multi class="nova-accordion">
+    <mat-expansion-panel
+      *ngFor="let item of novaAccordionData"
+      class="nova-panel"
+    >
+      <mat-expansion-panel-header>
+        <div class="nova-header">
+          <img
+            [src]="item.imageGroup"
+            [alt]="item.imageGroupAlt"
+            class="nova-header-image"
+          />
+          <div class="nova-header-text">
+            <span class="nova-title">{{ item.title }}</span>
+            <span class="nova-subtitle">{{ item.description }}</span>
+          </div>
         </div>
-      </div>
-    </mat-expansion-panel-header>
+      </mat-expansion-panel-header>
 
-    <app-nova-accordion [data]="item"></app-nova-accordion>
+      <app-nova-accordion [data]="item"></app-nova-accordion>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>
 
-
- </mat-expansion-panel></mat-accordion
->
-
-<div class="nova-container">
+<!-- Steps Section -->
+<section class="nova-container">
   <h2 class="nova-title">10 Practical Steps to Apply NOVA in Daily Life</h2>
 
   <div class="steps-grid">
-    <mat-card *ngFor="let step of novaSteps; let i = index" class="nova-step-card">
+    <mat-card
+      *ngFor="let step of novaSteps; let i = index"
+      class="nova-step-card"
+    >
       <div class="step-number">{{ i + 1 }}</div>
-      <img 
-        mat-card-image 
-        [src]="step.img" 
-        [alt]="step.title" 
+
+      <img
+        mat-card-image
+        [src]="step.img"
+        [alt]="step.title"
         class="image-step"
       />
+
       <mat-card-content>
         <h3 class="step-title">{{ step.title }}</h3>
         <p class="step-description">{{ step.description }}</p>
       </mat-card-content>
     </mat-card>
   </div>
-</div>
-
- </div>
+</section>

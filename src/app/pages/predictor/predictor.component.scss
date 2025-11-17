@@ -12,7 +12,7 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      color: #1976d2; 
+      color: #1976d2;
     }
 
     p {
@@ -23,48 +23,47 @@
   }
 
   .hero-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 32px;
-
-  .hero-point {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 32px;
 
-mat-icon {
-  font-size: 28px;
-  width: 52px;
-  height: 52px;
-  background-color: #e3f2fd;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1976d2;
-  flex-shrink: 0;
-  padding: 0;
-}
+    .hero-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 0;
-    }
+      mat-icon {
+        font-size: 28px;
+        width: 52px;
+        height: 52px;
+        background-color: #e3f2fd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1976d2;
+        flex-shrink: 0;
+        padding: 0;
+      }
 
-    a {
-      color: #1976d2; 
-      text-decoration: none;
-      font-weight: 500;
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+      }
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: #1976d2;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
-}
-
 
   .steps-title {
     text-align: center;
@@ -97,7 +96,7 @@ mat-icon {
         position: absolute;
         top: -12px;
         left: -12px;
-        background-color: #1976d2; 
+        background-color: #1976d2;
         color: #fff;
         width: 36px;
         height: 36px;
@@ -127,7 +126,7 @@ mat-icon {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    background-color: #437eb9; 
+    background-color: #437eb9;
 
     h3 {
       font-size: 1.8rem;

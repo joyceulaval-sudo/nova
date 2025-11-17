@@ -1,8 +1,6 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input } from '@angular/core'
 import { MatCardModule } from '@angular/material/card'
-import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatExpansionModule } from '@angular/material/expansion'
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon'; 
 import { FormsModule } from '@angular/forms';

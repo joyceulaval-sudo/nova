@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-faq',
@@ -15,7 +16,10 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
- faqData = [
+  faqData: { question: string; answer: SafeHtml }[] = [];
+  predictorFaqs: { question: string; answer: SafeHtml }[] = [];
+  constructor(private sanitizer: DomSanitizer) {
+    this.faqData = [
     {
       question: 'What is the main goal of healthy eating guidelines?',
       answer: 'The guidelines aim to promote healthy eating habits, prevent chronic diseases, and improve overall well-being by encouraging natural and minimally processed foods while limiting ultra-processed foods.'
@@ -52,9 +56,47 @@ export class FaqComponent {
       question: 'What beverages are recommended?',
       answer: 'Water is preferred. Natural beverages like unsweetened fruit or vegetable juices in moderation are fine. Avoid sugary drinks, soft drinks, and energy drinks.'
     },
-    {
+      {
+        question: 'What is the difference between NOVA and Nutri-Score?',
+        answer: this.sanitizer.bypassSecurityTrustHtml(`
+          <strong>NOVA / Degree of Processing:</strong> Indicates how processed a food product is. 
+          It looks at ingredients, additives, and overall transformation. Our predictor estimates this even if some product information is missing.<br><br>
+          <strong>Nutri-Score:</strong> Measures the nutritional quality based on calories, sugar, fat, salt, fiber, and other nutrients. 
+          A product can be highly processed but still have a good Nutri-Score.<br><br>
+          <strong>Key Difference:</strong> NOVA is about <em>how much the food is transformed</em>, while Nutri-Score is about <em>how healthy it is nutritionally</em>. They complement each other.
+        `)
+      },
+      {
       question: 'Where can I learn more about healthy eating?',
       answer: 'Reliable sources include Health Canada’s Food Guide, the World Health Organization, and national evidence-based nutrition resources.'
     }
   ];
+
+    this.predictorFaqs = [
+      {
+        question: 'Can the predictor work if some information is missing?',
+        answer: 'Yes! The model is designed to handle missing data and still make accurate predictions.'
+      },
+      {
+        question: 'Who can use the Food Processing Level Predictor?',
+        answer: 'Everyone! From students and educators to health-conscious consumers and researchers.'
+      },
+      {
+        question: 'Where does the data come from?',
+        answer: 'We use information from the Open Food Facts database, which contains product data from around the world.'
+      },
+      {
+        question: 'How fast is the prediction?',
+        answer: 'The prediction is nearly instant, giving you a Food score in seconds.'
+      },
+      {
+        question: 'Is it safe to rely on the predictor for all foods?',
+        answer: 'The predictor provides estimates based on available data. For rare or unusual products, results should be interpreted with caution.'
+      },
+      {
+        question: 'Can the predictor be integrated into apps?',
+        answer: 'Yes! It can be used as an API or embedded component in nutrition or health apps.'
+      }
+    ]
+  }
 }

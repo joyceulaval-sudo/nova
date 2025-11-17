@@ -1,4 +1,4 @@
-.faq-section {
+.faq {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -19,5 +19,32 @@
 
   mat-expansion-panel-header mat-icon {
     margin-right: 0.5rem;
+  }
+}
+
+.faq {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+
+  .faq-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1976d2;
+  }
+
+  mat-expansion-panel {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    mat-expansion-panel-header {
+      font-weight: 500;
+    }
+
+    mat-icon {
+      margin-right: 0.5rem;
+      color: #1976d2;
+    }
   }
 }

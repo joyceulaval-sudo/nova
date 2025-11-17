@@ -107,7 +107,7 @@ novaSteps = [
   },
   {
     title: 'Avoid ultra-processed foods',
-    description: 'These products often replace real meals and contain many artificial ingredients with no nutritional value.',
+    description: 'Even when fortified, these products often replace real meals, are made from inexpensive ingredients, digest quickly, and are designed to taste so good that they can make you eat more than you need.',
     img: 'assets/step4.png'
   },
   {
@@ -117,7 +117,7 @@ novaSteps = [
   },
   {
     title: 'Shop for variety',
-    description: 'Choose stores with a variety of unprocessed or minimally processed foods. Fresh foods are healthier and often more affordable.',
+    description: 'Choose stores with a variety of unprocessed or minimally processed foods. Fresh foods are healthier and can be affordable.',
     img: 'assets/step6.png'
   },
   {

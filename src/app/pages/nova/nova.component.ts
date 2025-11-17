@@ -6,6 +6,7 @@ import { MatChipsModule } from '@angular/material/chips'
 import { MatIconModule } from '@angular/material/icon'
 import { FormsModule } from '@angular/forms'
 import { NovaAccordionComponent } from '../../nova-accordion/nova-accordion.component'
+import { FooterComponent } from '../footer/footer.component'
 
 @Component({
   selector: 'app-nova',
@@ -16,25 +17,13 @@ import { NovaAccordionComponent } from '../../nova-accordion/nova-accordion.comp
     MatChipsModule,
     MatIconModule,
     FormsModule,
-    NovaAccordionComponent
-
-
+    NovaAccordionComponent,
+    FooterComponent
   ],
   templateUrl: './nova.component.html',
   styleUrl: './nova.component.scss'
 })
 export class NovaComponent {
-
-  title = "Unprocessed or Minimally Processed"
-  description = "Fresh fruits and vegetables"
-  imageGroup = "assets/nova-group-1.svg"
-  paragraph = " Foods obtained directly from plants or animals that are either unprocessed or only minimally processed — meaning they may be cleaned, peeled, cut, dried, chilled, frozen, pasteurized, or otherwise prepared without adding substances like salt, sugar, oils, or additives. These foods form the foundation of a nutritious, balanced, and naturally flavorful diet."
-  note = "These foods form the foundation of a nutritious, balanced, and naturally flavorful diet."
-  imageGroupAlt = "NOVA Group 1"
-  imageDescription = "assets/g1.png"
-  imageDescriptionAlt = "Fruits and vegetables"
-
-
   novaAccordionData = [{
     title: 'Unprocessed or Minimally Processed',
     description: 'Fresh fruits and vegetables',
@@ -139,4 +128,10 @@ export class NovaComponent {
       img: 'assets/step10.png'
     },
   ];
+
+  footerText = `Content based on the 
+      <a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
+         target="_blank" rel="noopener noreferrer">
+         Guia Alimentar para a População Brasileira
+      </a>.`
 }

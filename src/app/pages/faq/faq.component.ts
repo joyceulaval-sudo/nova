@@ -3,14 +3,15 @@ import { Component } from '@angular/core'
 import { MatExpansionModule } from '@angular/material/expansion'
 import { MatIconModule } from '@angular/material/icon'
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser'
+import { FooterComponent } from '../footer/footer.component'
 
 @Component({
   selector: 'app-faq',
   imports: [
     CommonModule,
     MatExpansionModule,
-    MatIconModule
-
+    MatIconModule,
+    FooterComponent
   ],
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss'
@@ -18,6 +19,9 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser'
 export class FaqComponent {
   faqData: { question: string; answer: SafeHtml }[] = [];
   predictorFaqs: { question: string; answer: SafeHtml }[] = [];
+  footerText = `The content on this page was generated with the assistance of 
+    <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>.`
+
   constructor(private sanitizer: DomSanitizer) {
     this.faqData = [
       {
@@ -98,5 +102,6 @@ export class FaqComponent {
         answer: 'Yes! It can be used as an API or embedded component in nutrition or health apps.'
       }
     ]
+
   }
 }

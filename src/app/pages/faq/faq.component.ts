@@ -16,6 +16,7 @@ import { FooterComponent } from '../footer/footer.component'
   templateUrl: './faq.component.html',
   styleUrl: './faq.component.scss'
 })
+
 export class FaqComponent {
   faqData: { question: string; answer: SafeHtml }[] = [];
   predictorFaqs: { question: string; answer: SafeHtml }[] = [];

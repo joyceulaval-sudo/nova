@@ -19,6 +19,7 @@ import { CommonModule } from '@angular/common'
   templateUrl: './nova-accordion.component.html',
   styleUrl: './nova-accordion.component.scss'
 })
+
 export class NovaAccordionComponent {
   @Input() data!: {
     title: string;
